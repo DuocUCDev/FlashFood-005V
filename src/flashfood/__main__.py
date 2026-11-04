@@ -8,6 +8,9 @@ from flashfood.modelo.errores import PersistenciaError
 
 def main() -> None:
     try:
+        from flashfood.vista.comun import activar_dpi
+
+        activar_dpi()
         from flashfood.vista.aplicacion import iniciar
 
         iniciar()

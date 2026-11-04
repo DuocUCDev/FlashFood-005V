@@ -4,7 +4,7 @@
     "tipo": "comida",
     "nombre": "Hamburguesa",
     "precio": 6500,
-    "stock": 24,
+    "stock": 18,
     "categoria": "Sándwich"
   },
   {
@@ -12,7 +12,7 @@
     "tipo": "comida",
     "nombre": "Papas fritas",
     "precio": 2500,
-    "stock": 38,
+    "stock": 32,
     "categoria": "Acompañamiento"
   },
   {
@@ -20,7 +20,7 @@
     "tipo": "bebida",
     "nombre": "Bebida cola",
     "precio": 1500,
-    "stock": 48,
+    "stock": 42,
     "mililitros": 350
   },
   {
@@ -28,7 +28,7 @@
     "tipo": "bebida",
     "nombre": "Jugo natural",
     "precio": 2000,
-    "stock": 20,
+    "stock": 18,
     "mililitros": 400
   }
 ]

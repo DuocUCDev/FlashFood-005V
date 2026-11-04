@@ -42,5 +42,129 @@
         "cantidad": 2
       }
     ]
+  },
+  {
+    "id": "ped-e0d2f659",
+    "cliente_id": "cli-camila",
+    "es_vip": false,
+    "hora_punta": false,
+    "lluvia": false,
+    "estado": "ENTREGADO",
+    "historial": [
+      "CREADO",
+      "PAGADO",
+      "EN_PREPARACION",
+      "EN_CAMINO",
+      "ENTREGADO"
+    ],
+    "repartidor_id": "rep-marta",
+    "stock_descontado": true,
+    "stock_restituido": false,
+    "pago": {
+      "aprobado": true,
+      "referencia": "EFE-FEF92E88",
+      "medio": "Efectivo",
+      "mensaje": "Pago en efectivo aprobado. Vuelto: $3.500"
+    },
+    "detalles": [
+      {
+        "producto_id": "prod-hamburguesa",
+        "nombre": "Hamburguesa",
+        "precio_unitario": 6500,
+        "cantidad": 5
+      },
+      {
+        "producto_id": "prod-papas",
+        "nombre": "Papas fritas",
+        "precio_unitario": 2500,
+        "cantidad": 5
+      },
+      {
+        "producto_id": "prod-cola",
+        "nombre": "Bebida cola",
+        "precio_unitario": 1500,
+        "cantidad": 5
+      },
+      {
+        "producto_id": "prod-jugo",
+        "nombre": "Jugo natural",
+        "precio_unitario": 2000,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": "ped-bb03b903",
+    "cliente_id": "cli-andres",
+    "es_vip": true,
+    "hora_punta": false,
+    "lluvia": false,
+    "estado": "EN_PREPARACION",
+    "historial": [
+      "CREADO",
+      "PAGADO",
+      "EN_PREPARACION"
+    ],
+    "repartidor_id": null,
+    "stock_descontado": true,
+    "stock_restituido": false,
+    "pago": {
+      "aprobado": true,
+      "referencia": "BIL-2D296558",
+      "medio": "Billetera digital",
+      "mensaje": "Pago con billetera aprobado"
+    },
+    "detalles": [
+      {
+        "producto_id": "prod-jugo",
+        "nombre": "Jugo natural",
+        "precio_unitario": 2000,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": "ped-456ebb74",
+    "cliente_id": "cli-1f59ccc6",
+    "es_vip": true,
+    "hora_punta": false,
+    "lluvia": false,
+    "estado": "ENTREGADO",
+    "historial": [
+      "CREADO",
+      "PAGADO",
+      "EN_PREPARACION",
+      "EN_CAMINO",
+      "ENTREGADO"
+    ],
+    "repartidor_id": "rep-marta",
+    "stock_descontado": true,
+    "stock_restituido": false,
+    "pago": {
+      "aprobado": true,
+      "referencia": "EFE-67461F38",
+      "medio": "Efectivo",
+      "mensaje": "Pago en efectivo aprobado. Vuelto: $8.550"
+    },
+    "detalles": [
+      {
+        "producto_id": "prod-hamburguesa",
+        "nombre": "Hamburguesa",
+        "precio_unitario": 6500,
+        "cantidad": 1
+      },
+      {
+        "producto_id": "prod-papas",
+        "nombre": "Papas fritas",
+        "precio_unitario": 2500,
+        "cantidad": 1
+      },
+      {
+        "producto_id": "prod-cola",
+        "nombre": "Bebida cola",
+        "precio_unitario": 1500,
+        "cantidad": 1
+      }
+    ]
   }
 ]
