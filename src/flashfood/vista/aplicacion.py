@@ -7,6 +7,7 @@ from flashfood.controladores.controlador import Controlador
 from flashfood.vista import comun
 from flashfood.vista.clientes import Clientes
 from flashfood.vista.comun import GRUPOS, MODULOS, activar_dpi, aplicar_tema, area_de_trabajo, informar
+from flashfood.vista.configuracion import Configuracion
 from flashfood.vista.detalle import Detalle
 from flashfood.vista.inicio import Inicio
 from flashfood.vista.pagos import Pagos
@@ -123,6 +124,7 @@ class Aplicacion(tk.Tk):
             "pagos": Pagos(self._contenido, controlador),
             "repartidores": Repartidores(self._contenido, controlador),
             "seguimiento": Seguimiento(self._contenido, controlador, self.abrir),
+            "configuracion": Configuracion(self._contenido, controlador, self.actualizar_pie),
         }
         self._actual = None
         self.mostrar("inicio")
@@ -211,7 +213,8 @@ class Aplicacion(tk.Tk):
     def actualizar_pie(self) -> None:
         hora = "Hora punta activa" if self.controlador.hora_punta else "Sin hora punta"
         lluvia = "Lluvia activa" if self.controlador.lluvia else "Sin lluvia"
-        self._estado_operacion.configure(text=f"Pedidos nuevos\n{hora}\n{lluvia}")
+        datos = "MySQL" if self.controlador.motor_activo == "mysql" else "JSON"
+        self._estado_operacion.configure(text=f"Pedidos nuevos\n{hora}\n{lluvia}\nDatos en {datos}")
 
     def abrir(self, destino: str, pedido_id: str | None = None) -> None:
         pantalla = self._pantallas.get(destino)

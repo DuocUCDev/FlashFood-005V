@@ -30,6 +30,7 @@ MODULOS = (
     ("pagos", "Pagos"),
     ("repartidores", "Repartidores"),
     ("seguimiento", "Seguimiento"),
+    ("configuracion", "Configuración"),
 )
 
 GRUPOS = (
@@ -37,6 +38,7 @@ GRUPOS = (
     ("Catálogo", ("productos", "clientes")),
     ("Pedido", ("pedidos", "pagos", "detalle")),
     ("Entrega", ("repartidores", "seguimiento")),
+    ("Sistema", ("configuracion",)),
 )
 
 ATAJOS = (
@@ -124,6 +126,8 @@ def aplicar_tema(raiz: tk.Misc) -> None:
     )
     estilo.configure("TCheckbutton", background=FONDO, foreground=TINTA, font=(FUENTE, 10))
     estilo.map("TCheckbutton", background=[("active", FONDO)])
+    estilo.configure("TRadiobutton", background=FONDO, foreground=TINTA, font=(FUENTE, 10))
+    estilo.map("TRadiobutton", background=[("active", FONDO)])
     estilo.configure("Titulo.TLabel", font=(FUENTE, 22, "bold"), background=FONDO, foreground=TINTA)
     estilo.configure("Ayuda.TLabel", font=(FUENTE, 10), background=FONDO, foreground=TINTA_SUAVE)
     estilo.configure("Ceja.TLabel", font=(FUENTE, 9, "bold"), background=FONDO, foreground=ACENTO)
